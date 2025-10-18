@@ -6,20 +6,26 @@ const Skills: React.FC = () => {
   const tools = ['Git', 'GitHub', 'Jenkins', 'VS Code', 'CI/CD'];
 
   return (
-    <section id="skills">
-      <h2>Technical Skills</h2>
+    <section id="skills" className="my-5">
+      <h2 className="h3 mb-3">Technical Skills</h2>
       <div className="row">
         <div className="col-md-4">
           <h5>Frontend</h5>
-          <ul>{frontend.map(skill => <li key={skill}>{skill}</li>)}</ul>
+          <ul className="list-group list-group-flush">
+            {frontend.map(skill => <li key={skill} className="list-group-item">{skill}</li>)}
+          </ul>
         </div>
         <div className="col-md-4">
           <h5>Backend</h5>
-          <ul>{backend.map(skill => <li key={skill}>{skill}</li>)}</ul>
+          <ul className="list-group list-group-flush">
+            {backend.map(skill => <li key={skill} className="list-group-item">{skill}</li>)}
+          </ul>
         </div>
         <div className="col-md-4">
           <h5>Tools</h5>
-          <ul>{tools.map(tool => <li key={tool}>{tool}</li>)}</ul>
+          <ul className="list-group list-group-flush">
+            {tools.map(tool => <li key={tool} className="list-group-item">{tool}</li>)}
+          </ul>
         </div>
       </div>
     </section>

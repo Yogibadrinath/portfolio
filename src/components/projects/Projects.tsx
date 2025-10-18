@@ -14,19 +14,19 @@ const projects: Project[] = [
   },
   {
     name: "Portfolio Website",
-    description: "This personal portfolio built with React + TypeScript + Bootstrap 5.",
-    link: "https://github.com/YOUR_USERNAME/portfolio",
+    description: "Personal portfolio built with React + TypeScript + Bootstrap 5.",
+    link: "https://github.com/Yogibadrinath/portfolio",
   },
 ];
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="mb-5">
+    <section id="projects" className="my-5">
       <h2 className="h3 mb-3">Projects</h2>
-      <div className="row g-3">
-        {projects.map((project) => (
-          <div key={project.name} className="col-12 col-md-6">
-            <div className="card h-100 shadow-sm">
+      <div className="row g-4">
+        {projects.map(project => (
+          <div key={project.name} className="col-md-6">
+            <div className="card shadow-sm h-100">
               <div className="card-body">
                 <h5 className="card-title">{project.name}</h5>
                 <p className="card-text">{project.description}</p>
