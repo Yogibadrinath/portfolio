@@ -3,19 +3,29 @@ import React from "react";
 interface Project {
   name: string;
   description: string;
-  link: string;
+  tech: string[];
+  link?: string;
 }
 
 const projects: Project[] = [
   {
-    name: "Advanced Task & Project Management System",
-    description: "React + Node.js + SQL Server project to manage tasks, workflows, and team collaboration.",
-    link: "https://github.com/YOUR_USERNAME/your-project",
+    name: "Practice Management System (PMS)",
+    description:
+      "A web platform designed for home-based treatment and family support services. Built to improve accessibility and case management for child welfare and mental health systems.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "SQL Server"],
   },
   {
-    name: "Portfolio Website",
-    description: "Personal portfolio built with React + TypeScript + Bootstrap 5.",
-    link: "https://github.com/Yogibadrinath/portfolio",
+    name: "Proconekt - Foster Care Support Platform",
+    description:
+      "A responsive web app that supports foster and kinship families by providing resources, training modules, and role-based dashboards for caregivers and administrators.",
+    tech: ["React", "TypeScript", "Node.js", "REST API", "Bootstrap"],
+  },
+  {
+    name: "Personal Portfolio Website",
+    description:
+      "A modern, responsive portfolio website showcasing my professional experience, projects, and technical skills.",
+    tech: ["React", "TypeScript", "Bootstrap"],
+    link: "https://yogibadrinath.github.io/portfolio/",
   },
 ];
 
@@ -24,15 +34,29 @@ const Projects: React.FC = () => {
     <section id="projects" className="my-5">
       <h2 className="h3 mb-3">Projects</h2>
       <div className="row g-4">
-        {projects.map(project => (
+        {projects.map((project) => (
           <div key={project.name} className="col-md-6">
-            <div className="card shadow-sm h-100">
+            <div className="card shadow-sm h-100 border-0">
               <div className="card-body">
                 <h5 className="card-title">{project.name}</h5>
-                <p className="card-text">{project.description}</p>
-                <a href={project.link} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">
-                  View Project
-                </a>
+                <p className="card-text text-muted">{project.description}</p>
+                <p className="small mb-3">
+                  <strong>Tech Stack:</strong> {project.tech.join(", ")}
+                </p>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    View Project
+                  </a>
+                ) : (
+                  <button className="btn btn-outline-secondary btn-sm" disabled>
+                    Private Project
+                  </button>
+                )}
               </div>
             </div>
           </div>

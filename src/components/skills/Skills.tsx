@@ -3,7 +3,7 @@ import React from 'react';
 const Skills: React.FC = () => {
   const frontend = ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS', 'Bootstrap'];
   const backend = ['Node.js', 'Express.js', 'REST APIs'];
-  const tools = ['Git', 'GitHub', 'Jenkins', 'VS Code', 'CI/CD'];
+  const tools = ['Git', 'GitHub', 'VS Code', 'CI/CD'];
 
   return (
     <section id="skills" className="my-5">
