@@ -18,12 +18,12 @@ const projects: Project[] = [
     description: "A responsive web app for foster and kinship family support with role-based dashboards.",
     tech: ["React", "TypeScript", "Node.js", "REST API", "Bootstrap"],
   },
-  {
-    name: "Personal Portfolio Website",
-    description: "A modern, responsive portfolio showcasing my projects and skills.",
-    tech: ["React", "TypeScript", "Bootstrap"],
-    link: "https://yogibadrinath.github.io/portfolio/",
-  },
+  // {
+  //   name: "Personal Portfolio Website",
+  //   description: "A modern, responsive portfolio showcasing my projects and skills.",
+  //   tech: ["React", "TypeScript", "Bootstrap"],
+  //   link: "https://github.com/Yogibadrinath/portfolio",
+  // },
 ];
 
 const Projects: React.FC = () => {
