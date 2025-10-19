@@ -2,7 +2,7 @@ import React from "react";
 
 const Certifications: React.FC = () => {
   return (
-    <section id="certifications" className="my-5">
+    <section id="certifications" className="my-5 px-3 px-md-0">
       <h2 className="h3 mb-3">Certifications</h2>
       <ul className="list-unstyled">
         <li className="mb-2">

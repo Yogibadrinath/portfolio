@@ -6,7 +6,7 @@ const Skills: React.FC = () => {
   const tools = ['Git', 'GitHub', 'VS Code', 'CI/CD'];
 
   return (
-    <section id="skills" className="my-5">
+    <section id="skills" className="my-5 px-3 px-md-0">
       <h2 className="h3 mb-3">Technical Skills</h2>
       <div className="row">
         <div className="col-md-4">
