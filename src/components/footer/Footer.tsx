@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-dark text-light py-3 mt-5">
-      <div className="container text-center">
+      <div className="container text-end">
         &copy; {new Date().getFullYear()} Yogi Badrinath.
       </div>
     </footer>

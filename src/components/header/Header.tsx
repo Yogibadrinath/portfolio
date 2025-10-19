@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
   const handleScroll = () => {
-    const scrollPos = window.scrollY + 120; // adjust for header
+    const scrollPos = window.scrollY + 200;
     let currentSection = sections[0];
 
     sections.forEach((section) => {
@@ -17,7 +17,6 @@ const Header: React.FC = () => {
       }
     });
 
-    // Force last section active if scrolled near bottom
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
       currentSection = sections[sections.length - 1];
     }
