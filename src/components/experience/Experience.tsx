@@ -6,7 +6,7 @@ const Experience: React.FC = () => {
       <h2 className="h3 mb-3">Experience</h2>
       <div className="card shadow-sm mb-3">
         <div className="card-body">
-          <h5 className="card-title">Software Engineer - Qube Root Analytics International Pvt Ltd</h5>
+          <h5 className="card-title">Software Developer - Qube Root Analytics International Pvt Ltd</h5>
           <h6 className="card-subtitle mb-2 text-muted">Feb 2023 - Present | Bengaluru</h6>
           
           <h6 className="mt-3 fw-bold">Projects:</h6>
